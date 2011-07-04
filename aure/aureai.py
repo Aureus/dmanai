@@ -5,8 +5,6 @@ from math import sin, cos, pi, sqrt
 import random
 
 
-
-
 class Squad(object):
 
 	def __init__(self,unit):
@@ -206,6 +204,10 @@ class OliAI2(ai.AI):
 					pass
 					
 			elif squad.is_scout:
+				if squad.units[0].visible_buildings:
+					for building in squad.units[0].visible_buildings:
+						if not building.team == self.team:
+							squad.siege(building)
 				if self.unexplored_squares:	
 					squad.explore(self.heat_map, self.unexplored_squares)
 				else:
