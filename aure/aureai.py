@@ -1,6 +1,6 @@
 import ai
 import ai_exceptions
-AIClass="OliAI2"
+AIClass="AureAI"
 from math import sin, cos, pi, sqrt
 import random
 
