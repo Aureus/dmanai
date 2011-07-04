@@ -150,7 +150,7 @@ class Squad(object):
 		
 class OliAI2(ai.AI):
 
-	self.PLAY_IN_LADDER = True
+	PLAY_IN_LADDER = True
 
 	def _init(self):
 		self.my_squads = []
