@@ -157,7 +157,7 @@ class OliAI2(ai.AI):
 		self.unexplored_squares = set([(x,y) for y in xrange(self.mapsize+1) for x in xrange(self.mapsize+1)])
 		self.known_buildings = set()	
 		self.have_scout = 0
-		self.PLAY_IN_LADDER = TRUE
+		self.PLAY_IN_LADDER = True
 		
 				
 				
